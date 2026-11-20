@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Laptops | NOVA TECH</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container nav-container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+
+        <button data-menu-toggle class="menu-toggle">☰</button>
+
+        <div class="nav-links" data-nav>
+            <a href="index.html">Home</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="favorites.html">
+                Favorites (<span data-fav-count>0</span>)
+            </a>
+            <a class="active" href="compare.html">Compare</a>
+            <button class="theme-toggle" data-theme-toggle>
+                Battery Saver
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="container page-content">
+
+    <section class="page-heading">
+        <span class="eyebrow">MAKE THE RIGHT CHOICE</span>
+        <h1>Compare laptops.</h1>
+        <p>
+            Select between two and four saved laptops
+            to compare their specifications.
+        </p>
+    </section>
+
+    <section class="compare-selection">
+        <div class="section-heading">
+            <div>
+                <h2>Select your laptops</h2>
+                <p class="muted">
+                    Choose 2–4 laptops from your favorites.
+                </p>
+            </div>
+
+            <span class="selection-limit">MAX 4</span>
+        </div>
+
+        <div class="choice-list" data-compare-picker>
+            <p>Loading favorites...</p>
+        </div>
+
+        <p class="compare-message" data-compare-message>
+            Choose at least two laptops to start comparing.
+        </p>
+    </section>
+
+    <section class="comparison-section">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">SIDE BY SIDE</span>
+                <h2>Comparison results</h2>
+            </div>
+        </div>
+
+        <div data-comparison>
+            <div class="empty">
+                Your comparison will appear here.
+            </div>
+        </div>
+    </section>
+
+    <div class="compare-legend">
+        <span class="best-indicator">★</span>
+        Best value in this specification
+    </div>
+
+    <p class="error-message" data-error hidden></p>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+        <small>© 2026 NOVA TECH.</small>
+    </div>
+</footer>
+
+<script type="module" src="./src/js/compare.js"></script>
+</body>
+</html>

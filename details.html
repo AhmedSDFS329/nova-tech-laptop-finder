@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Details | NOVA TECH</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container nav-container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+
+        <button data-menu-toggle class="menu-toggle">☰</button>
+
+        <div class="nav-links" data-nav>
+            <a href="index.html">Home</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="favorites.html">Favorites (<span data-fav-count>0</span>)</a>
+            <a href="compare.html">Compare</a>
+            <button class="theme-toggle" data-theme-toggle>
+                Battery Saver
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="container page-content">
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="laptops.html">Laptops</a> /
+        <span>Details</span>
+    </div>
+
+    <p class="error-message" data-error hidden></p>
+
+    <section class="detail-layout" data-detail>
+        <div class="skeleton animate-pulse">
+            <div class="sk-image"></div>
+        </div>
+        <div class="skeleton animate-pulse">
+            <div class="sk-line"></div>
+            <div class="sk-line short"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+        <small>© 2026 NOVA TECH.</small>
+    </div>
+</footer>
+
+<script type="module" src="./src/js/details.js"></script>
+</body>
+</html>

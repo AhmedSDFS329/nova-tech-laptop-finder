@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Catalogue | NOVA TECH</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container nav-container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+
+        <button data-menu-toggle class="menu-toggle">☰</button>
+
+        <div class="nav-links" data-nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="laptops.html">Laptops</a>
+            <a href="favorites.html">Favorites (<span data-fav-count>0</span>)</a>
+            <a href="compare.html">Compare</a>
+            <button class="theme-toggle" data-theme-toggle>
+                Battery Saver
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="container page-content">
+
+    <section class="page-heading">
+        <span class="eyebrow">EXPLORE THE COLLECTION</span>
+        <h1>Find your next laptop.</h1>
+        <p>Search, filter, and sort laptops to find your perfect match.</p>
+    </section>
+
+    <section class="filter-panel">
+        <div class="filter-grid">
+
+            <div class="form-group">
+                <label for="search">Search laptop</label>
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Search by name or brand..."
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="all">All categories</option>
+                    <option value="ultrabook">Ultrabook</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="2-in-1">2-in-1</option>
+                    <option value="creator">Creator</option>
+                    <option value="budget">Budget</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="max-price">Maximum price ($)</label>
+                <input
+                    id="max-price"
+                    type="number"
+                    min="0"
+                    placeholder="Any price"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="min-ram">Minimum RAM</label>
+                <select id="min-ram">
+                    <option value="0">Any RAM</option>
+                    <option value="8">8 GB</option>
+                    <option value="16">16 GB</option>
+                    <option value="32">32 GB</option>
+                    <option value="64">64 GB</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sort">Sort by</label>
+                <select id="sort">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="battery-asc">Battery: Low to High</option>
+                    <option value="battery-desc">Battery: High to Low</option>
+                    <option value="weight-asc">Weight: Light to Heavy</option>
+                    <option value="weight-desc">Weight: Heavy to Light</option>
+                </select>
+            </div>
+
+            <div class="form-group filter-button">
+                <label>&nbsp;</label>
+                <button id="reset" class="btn-secondary">
+                    Reset filters
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="results-header">
+        <h2>Available laptops</h2>
+        <span data-result-count>Loading...</span>
+    </div>
+
+    <p class="error-message" data-error hidden></p>
+
+    <section class="laptop-grid" data-laptop-grid>
+        <div class="skeleton animate-pulse">
+            <div class="sk-image"></div>
+            <div class="sk-line"></div>
+            <div class="sk-line short"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+        <small>© 2026 NOVA TECH.</small>
+    </div>
+</footer>
+
+<script type="module" src="./src/js/laptops.js"></script>
+</body>
+</html>

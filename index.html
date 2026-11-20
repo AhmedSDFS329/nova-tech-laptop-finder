@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the perfect student laptop.">
+    <title>NOVA TECH | Student Laptop Finder</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container nav-container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+
+        <button data-menu-toggle class="menu-toggle">☰</button>
+
+        <div class="nav-links" data-nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="favorites.html">Favorites (<span data-fav-count>0</span>)</a>
+            <a href="compare.html">Compare</a>
+            <button class="theme-toggle" data-theme-toggle>
+                Battery Saver
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero container">
+        <div class="hero-content">
+            <span class="eyebrow">SMARTER LAPTOP SHOPPING</span>
+
+            <h1>Find your perfect <span>student laptop.</span></h1>
+
+            <p>
+                Discover laptops that match your budget,
+                performance needs, and student lifestyle.
+            </p>
+
+            <div class="hero-actions">
+                <a href="laptops.html" class="btn-action">
+                    Explore laptops →
+                </a>
+                <a href="favorites.html" class="btn-secondary">
+                    My favorites
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-glow"></div>
+            <div class="hero-device">NOVA</div>
+            <span class="floating-label">Performance meets portability.</span>
+        </div>
+    </section>
+
+    <section class="container stats-section">
+        <div class="stat-card">
+            <span>Total laptops</span>
+            <strong data-stat="count">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Lowest price</span>
+            <strong data-stat="lowest">$0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Saved favorites</span>
+            <strong data-stat="favorites">0</strong>
+        </div>
+    </section>
+
+    <section class="container section-space">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">HANDPICKED FOR YOU</span>
+                <h2>Featured laptops</h2>
+            </div>
+
+            <a href="laptops.html" class="text-link">
+                View all laptops →
+            </a>
+        </div>
+
+        <div class="laptop-grid" data-featured>
+            <div class="skeleton animate-pulse">
+                <div class="sk-image"></div>
+                <div class="sk-line"></div>
+                <div class="sk-line short"></div>
+            </div>
+        </div>
+
+        <p class="error-message" data-error hidden></p>
+    </section>
+
+    <section class="container section-space">
+        <div class="promo-card">
+            <span class="eyebrow">YOUR NEXT UPGRADE STARTS HERE</span>
+            <h2>Better choices. Better performance.</h2>
+            <p>Compare your favorite laptops and choose confidently.</p>
+            <a href="compare.html" class="btn-action">
+                Start comparing →
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+        <p>Helping students find the right technology.</p>
+        <small>© 2026 NOVA TECH. Student project.</small>
+    </div>
+</footer>
+
+<script type="module" src="./src/js/home.js"></script>
+</body>
+</html>

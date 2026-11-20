@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="performance">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites | NOVA TECH</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container nav-container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+
+        <button data-menu-toggle class="menu-toggle">☰</button>
+
+        <div class="nav-links" data-nav>
+            <a href="index.html">Home</a>
+            <a href="laptops.html">Laptops</a>
+            <a class="active" href="favorites.html">
+                Favorites (<span data-fav-count>0</span>)
+            </a>
+            <a href="compare.html">Compare</a>
+            <button class="theme-toggle" data-theme-toggle>
+                Battery Saver
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="container page-content">
+
+    <section class="page-heading">
+        <span class="eyebrow">YOUR PERSONAL COLLECTION</span>
+        <h1>My favorites.</h1>
+        <p>All the laptops you have saved in one place.</p>
+    </section>
+
+    <section class="stats-section favorites-stats">
+        <div class="stat-card">
+            <span>Saved laptops</span>
+            <strong data-total-count>0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Total price</span>
+            <strong data-total-price>$0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Average price</span>
+            <strong data-average-price>$0</strong>
+        </div>
+    </section>
+
+    <div class="results-header">
+        <h2>Saved laptops</h2>
+
+        <button
+            id="clear-favorites"
+            class="btn-danger"
+            type="button"
+        >
+            Clear all favorites
+        </button>
+    </div>
+
+    <p class="error-message" data-error hidden></p>
+
+    <section class="laptop-grid" data-favorites-grid>
+        <div class="skeleton animate-pulse">
+            <div class="sk-image"></div>
+            <div class="sk-line"></div>
+            <div class="sk-line short"></div>
+        </div>
+    </section>
+
+    <div class="compare-cta">
+        <h2>Ready to make a decision?</h2>
+        <p>Compare your saved laptops side by side.</p>
+        <a href="compare.html" class="btn-action">
+            Compare favorites →
+        </a>
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <a href="index.html" class="logo">NOVA<span>TECH.</span></a>
+        <small>© 2026 NOVA TECH.</small>
+    </div>
+</footer>
+
+<script type="module" src="./src/js/favorites.js"></script>
+</body>
+</html>
